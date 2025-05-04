@@ -1,0 +1,23 @@
+// Apex Class to represent a Student
+public class  stud {
+    public String name { get; set; }
+    public Integer age { get; set; }
+    public String email { get; set; }
+    public String course { get; set; }
+
+    // Constructor
+    public Stud(String name, Integer age, String email, String course) {
+        this.name = name;
+        this.age = age;
+        this.email = email;
+        this.course = course;
+    }
+
+    // Method to return student info
+    public String getStudentInfo() {
+        return 'Name: ' + name + ', Age: ' + age + ', Email: ' + email + ', Course: ' + course;
+    }
+}
+Debug:-
+Stud s = new Stud('Aniket jagtap', 21, 'aniket@example.com', 'Computer Science');
+System.debug(s.getStudentInfo());
